@@ -1,0 +1,68 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta charset="utf-8" />
+
+	<title>{{ page.title }} &middot; Stefan Jonker </title>
+
+	{% include header.html %}
+
+	<style>
+	/*
+		Specific
+	*/
+
+	.datum { color: #999999; }	
+	.posted { display: inline-block; width: 100px; }	
+
+	/* http://css-tricks.com/snippets/css/make-pre-text-wrap/ */
+	pre {
+		white-space: pre-wrap;       /* css-3 */
+		white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+		white-space: -pre-wrap;      /* Opera 4-6 */
+		white-space: -o-pre-wrap;    /* Opera 7 */
+		word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	}
+	</style>
+
+	{% include viewport.html %}
+</head>
+
+<body>
+
+{% include skipnav.html %}
+
+<div class="wrap">
+	{% include responsivemenu.html %}
+
+	<div class="navigationDefault">
+	{% include menu.html %}
+	</div>
+	
+	<article>
+		<div id="skiptocontent" tabindex="-1" role="main">
+		<h1>{{ page.title }}</h1>
+		<p>
+			<span class="posted">Posted:</span>
+			<span class="datum">
+				<time datetime="{{ page.date | %d-%m-%Y }}">{{ page.date | date_to_string }}</time>
+			</span>
+		</p>
+			
+		{{ content }}
+		</div>
+	</article>
+</div>
+
+<div class="navigationSmall" id="skiptomenusmall">
+{% include menu.html %}
+</div>
+
+{% include hash.html %}
+{% include highlight.html %}
+
+</body>
+</html>

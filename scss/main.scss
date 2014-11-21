@@ -1,0 +1,320 @@
+/*
+ *		Ouch.
+ *		This _needs_ a rewrite someday.
+ *		There might be some things that do not work, sorry.
+ */
+
+/*
+ * General
+ */
+
+body {
+	margin-top: 32px;
+	margin-bottom: 64px;
+	background-color: #ffffff;
+}
+
+#summary dt {
+	font-weight: bold;
+}
+
+dl, p {
+	margin-top: 0em;
+	margin-bottom: 1.813em;
+}
+
+dt {
+	float: left;
+}
+
+dd {
+	margin-left: 160px;
+}
+
+ul {
+	padding-left: 0px;
+}
+
+* {
+line-height: 1.813em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: georgia;
+}
+
+h1 {
+	font-size: 2.938em;
+}
+
+h2 {
+	font-size:1.813em;
+}
+
+h3 {
+	font-size:1.438em;
+}
+
+li {
+	list-style:square;
+}
+
+p, dd, dt, li, strong {
+	font-size: 1.14em;
+	font-family:georgia;
+}
+
+a, strong, .beschrijving > ul > li, ul > li > p {
+	font-size:inherit;
+}
+
+ul > li > ul > li {
+	margin-left:80px;
+	font-size:inherit;
+}
+
+p, li, dd {
+	color:#333333;
+}
+
+a:link {
+	color:#343fff;
+}
+
+#interesse, .markering, dt {
+	color:#000000;
+}
+
+a:link {
+	color:#343fff;
+}
+
+label {
+	display: inline-block;
+}
+
+.datum, .posted, label {
+	display: inline-block;
+	width: 76px;
+}
+
+.datum {
+color: #999;
+display: inline-block;
+}
+
+.grijs {
+color: #999;
+}
+
+nav > ul > li {
+	font-size: 1.14em;
+	width: 140px; 
+	height: 40px;
+	display: inline-block; 
+	margin-right: 16px; 
+	text-align: center; 
+	border-bottom: 2px solid black;
+}
+
+nav > ul > li:last-child {
+	margin-right: 0em;
+}
+
+nav > ul > li > a {
+	text-decoration: none;
+}
+
+.event {
+	width: 100px;
+	display: inline-block;
+	float: left;
+}
+
+.date {
+	width: 100px;
+	display: inline-block;
+	float: right;
+	text-align: right;	
+}
+
+.description {
+	display: inline-block;
+	width: 400px;
+}
+
+#lifeline li {
+	list-style-type: none;
+}
+
+.cursus, .book, .conference, .life, .stage, .school {
+}
+
+/*
+.work, 
+*/
+
+/*
+ * Tablet resolution
+ */
+
+@media screen and (max-width: 600px) 
+{ 
+	a {
+		padding: 10px 0px 10px 0px;
+		display: inline-block;
+	}
+
+	#resume-me {
+		display: block;
+    margin-left: auto;
+    margin-right: auto;
+		border: 2px solid black;
+		transform: rotate(5deg);
+		-webkit-transform: rotate(5deg);
+		float: none;
+		margin-bottom: 30px;
+	}
+
+	#wrap {
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 360px;
+	 	margin-left: 0px;
+	  margin-right: 0px;
+	}
+	
+	* {
+		line-height: 1.313em;
+		word-wrap: break-word;
+	}
+	
+	p, dd, dt, li, strong {
+		font-size: 0.813em;
+	}
+	
+	h1 {
+		font-size: 2.125em;
+	}
+	
+	h2 {
+		font-size: 1.313em;
+	}
+	
+	h3 {
+		font-size: 1.063em;
+	}
+	
+	a, strong, .beschrijving > ul > li, ul > li > p {
+		font-size:inherit;
+	}
+	
+	ul > li > ul > li {
+		font-size:inherit;
+	}
+
+	nav > ul > li {
+		font-size: 0.813em;
+		width: 60px; 
+		height: 25px;
+		display: inline-block; 
+		margin-right: 16px; 
+		text-align: center; 
+		border-bottom: 2px solid black;
+	}
+	
+	nav > ul > li:last-child {
+		margin-right: 0em;
+	}
+	
+	nav > ul > li > a {
+		text-decoration: none;
+	}
+
+	.event {
+		display: none;
+	}
+
+	.date {
+		float: right;
+		width: 100px;
+		text-align: right;
+	}
+
+	.description {
+		display: inline;
+		width: auto;
+		float: none;
+	}
+}
+
+/*
+ * Small resolution
+ */
+
+@media only screen
+and (min-width : 600px) {
+	#wrap {
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 620px;
+	 	margin-left: auto;
+	 	margin-right: auto;
+	}
+	
+	#resume-me {
+		border: 2px solid black;
+		transform: rotate(5deg);
+		-webkit-transform: rotate(5deg);
+		float: right;
+		margin: 15px;
+		margin-bottom: 30px;
+	}
+	
+	* {
+		line-height: 1.813em;
+	}
+	
+	p, dd, dt, li, strong {
+		font-size: 1.14em;
+	}
+	
+	h1 {
+		font-size: 2.938em;
+	}
+	
+	h2 {
+		font-size: 1.813em;
+	}
+	
+	h3 {
+		font-size: 1.438em;
+	}
+	
+	a, strong, .beschrijving > ul > li, ul > li > p {
+		font-size:inherit;
+	}
+	
+	ul > li > ul > li {
+		font-size:inherit;
+	}
+
+	nav > ul > li {
+		font-size: 1.14em;
+		width: 140px; 
+		height: 40px;
+		display: inline-block; 
+		margin-right: 16px; 
+		text-align: center; 
+		border-bottom: 2px solid black;
+	}
+	
+	nav > ul > li:last-child {
+		margin-right: 0em;
+	}
+	
+	nav > ul > li > a {
+		text-decoration: none;
+	}
+}
+

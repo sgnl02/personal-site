@@ -1,0 +1,7 @@
+pygments: true
+//permalink: /blog/:title.html
+//paginate: 5
+//url: http://www.stefanjonker.nl
+url: http://localhost:8888/_site
+lsi: true
+exclude: [node_modules, Gruntfile.js, package.json]

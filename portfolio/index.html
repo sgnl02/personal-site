@@ -1,0 +1,125 @@
+---
+layout: portfolio
+title: Portfolio
+---
+<header>
+	<h1>{{ page.title }}</h1>
+
+	<p>
+		My portfolio consists (mostly) out of experimental code, small snippets or code I have been
+		experimenting with.
+	</p>
+</header>
+ 
+<section id="filter">
+	<div role="search">
+		<label for="filteren"><strong>Filter:</strong></label>
+	
+		<input type="text" id="filteren" placeholder="type to filter the list" size="30"/>
+	</div>
+</section>
+
+<section id="javascript">
+	<h2>JavaScript</h2>
+
+	<p>
+		You most likely will be needing the <em>web console</em> (for Chrome or 
+		FireFox) or <em>Dragonfly</em> (for Opera)
+
+	<ul>
+			<li>
+				<a href="javascript/augmenting_types.html">Augmenting types</a>:
+				useful for making methods available to all functions.
+			</li>
+
+			<li>
+				<a href="javascript/closure.html">Closures</a>:
+				having access to outer variables is useful to create private scopes.
+			</li>
+
+			<li>
+				<a href="javascript/dnt.html">Do Not Track</a>:
+				reading <abbr title="Do Not Track">DNT</abbr>-headers with JavaScript (DNT is
+				<strong><a href="http://yro.slashdot.org/story/12/09/23/1334258/advertisers-never-intended-to-honor-dnt">unreliable</a></strong>).
+			</li>
+
+			<li>
+				<a href="javascript/function_invocation_pattern.html">Function invocation pattern</a>:
+				using <em>this</em> in a more reliable way by storing it in <em>that</em>.
+			</li>
+
+			<li>
+				<a href="javascript/global_abatement.html">Global abatement</a>:
+				creating properties for <em>one</em> local variable to reduce global variables.
+			</li>
+
+			<li>
+				<a href="javascript/lambda.html">Lambda</a>:
+				passing a function as an argument.
+			</li>
+
+			<li>
+				<span>
+				<a href="javascript/module.html">Module</a>:
+				making a module out of a method.
+			</li>
+
+			<li>
+				<a href="javascript/not_operator_boolean.html">Not operator boolean</a>:
+				<em>!!</em> produces <em>booleans</em>.
+			</li>
+
+			<li><span>
+				<a href="javascript/parseint.html">Parseint</a>:
+				it's <em>recommended</em> to use the <em>radix parameter</em> to prevent 
+				problems with leading zeros.
+		</span></li>
+
+			<li>
+				<a href="javascript/shorthand_if.html">Shorthand if-statements</a>:
+				the <em>or</em>-operator can be used as an if-statement.
+			</li>
+
+			<li>
+				<a href="http://tuit.stefanjonker.nl/">Click-to-Retweet</a>: an improvement
+				over static shared lists of Tweets which now can be clicked.</a>
+			</li>
+
+			<li>
+				<a href="http://circos.stefanjonker.nl/">"Circos Sin Animales"</a> <sup>(Experimental)</sup>: map with places showing where it is not allowed to have circuses with animals in M&eacute;xico.</a>
+			</li>
+
+			<li>
+			<a href="http://stefanjonker.nl/vegamap/map/">Vegamap Monterrey</a> <sup>(Experimental)</sup>: map that
+				shows vegetarian/vegan places in <span lang="spanish">Monterrey</span>.</a>
+			</li>
+	</ul>
+</section>
+
+<section id="school">
+	<h2>School</h2>
+
+	<ul>
+		<li>
+			<a href="stageverslag/pressofoon">Pressofoon</a>:
+			internship report.			
+		</li>
+		<li>
+			<a href="https://github.com/sgnl02/Klein-portfolio-met-CSS">Fluid box layout</a>:
+			an old portfolio of mine.
+		<li>
+			<a href="stageverslag/vedicom">Vedicom</a>:
+			internship report.			
+		</li>
+	</ul>
+
+<section id="usability">
+	<h2>Usability</h2>
+
+	<ul>
+		<li>
+			<a href="usability/postredirectget/">Post/Redirect/Get</a>:
+			not confusing the user when the 'back' button has been clicked using a form.
+		</li>
+	</ul>
+</section>

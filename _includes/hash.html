@@ -1,0 +1,23 @@
+<script>
+window.addEventListener("hashchange", function(event) {
+
+    var element = document.getElementById(location.hash.substring(1));
+
+    if (element) {
+
+        if (!/^(?:a|select|input|button|textarea)$/i.test(element.tagName)) {
+            element.tabIndex = -1;
+        }
+
+        element.focus();
+
+	/* 
+	Puts content to the top of the window: 
+	https://developer.mozilla.org/en-US/docs/Web/API/element.scrollIntoView#document-main
+	*/
+	element.scrollIntoView(alignWithTop);
+    }
+
+}, false); 
+</script>
+

@@ -1,0 +1,50 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta charset="utf-8" />
+
+	<title>{{ page.title }} &middot; Stefan Jonker</title>
+
+	{% include header.html %}
+
+	<style>
+	/*
+		Specific
+	*/
+
+	.datum { color: #999; }	
+	.datum, .posted, label { display: inline-block; width: 100px; }	
+	</style>
+
+	{% include viewport.html %}
+</head>
+
+<body>
+
+{% include skipnav.html %}
+
+<div class="wrap">
+	{% include responsivemenu.html %}
+
+	<div class="navigationDefault">
+	{% include menu.html %}
+	</div>
+
+	<div id="skiptocontent" tabindex="-1" role="main">
+	{{ content }}
+	</div>
+</div>
+
+<div class="navigationSmall" id="skiptomenusmall">
+{% include menu.html %}
+</div>
+
+{% include hash.html %}
+{% include jquery.html %}
+{% include filter.html %}
+
+</body>
+</html>

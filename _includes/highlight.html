@@ -1,0 +1,25 @@
+<script>
+/*
+ Slightly modified version of: https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery
+*/
+
+var highlight = function() {
+  [
+    '/css/highlight.css'
+  ].forEach(function(src) {
+    var link = document.createElement('link')
+    , head = document.getElementsByTagName('head')[0]; 
+  
+    link.href = src;
+    link.rel = "stylesheet";
+    link.name = "highlight";
+    link.type = "text/css";
+    head.parentNode.insertBefore(link, head);
+  });
+};
+
+var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+webkitRequestAnimationFrame || msRequestAnimationFrame;
+if (raf) raf(highlight);
+else window.addEventListener('load', highlight);
+</script>

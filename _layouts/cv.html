@@ -1,0 +1,43 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+ 	<meta charset="utf-8" />
+
+	<title>{{ page.title }} &middot; Stefan Jonker</title>
+
+	{% include header.html %}
+
+	<style>
+	/* Resume-specific */
+	.datum { color: #999; }	
+	.datum, .posted, label { display: inline-block; width: 100px; }	
+	#summary dt { font-weight: bold; }	
+	dt { float: left; }
+	dd { margin-left: 140px; }
+	#resume-me { border: 2px solid black; transform: rotate(5deg); -webkit-transform: rotate(5deg); float: right; margin: 15px; margin-bottom: 30px; }	
+
+	@media screen and (max-width: 600px) {
+		#resume-me { margin-left: auto; margin-right: auto; display: block; float: none !important; transform: none; -webkit-transform: none; }
+	}
+	</style>
+
+	{% include viewport.html %}
+</head>
+
+<body>
+
+{% include skipnav.html %}
+
+<div class="wrap">
+	<div id="skiptocontent" tabindex="-1" role="main">
+	{{ content }}
+	</div>
+</div>
+
+{% include hash.html %}
+
+</body>
+</html>

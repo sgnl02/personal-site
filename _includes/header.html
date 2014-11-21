@@ -1,0 +1,107 @@
+<link rel="shortcut icon" href="/favicon.ico" />	
+
+<style>
+body { background: #ffffff; margin-top: 1em !important; margin-left: 1em !important; margin-right: 1em !important; margin-bottom: 5em !important; font-size: 110% !important; font-family: georgia; line-height: 2em; }
+.wrap { margin-top: 2em; width: 600px; }	
+.me { display: block; border-radius: 100%; }
+.me, .wrap { margin-left: auto; margin-right: auto; }
+a:visited { color: #1286D6; }
+a:visited { color: #646BBC; }
+a:link { color: #007be0; }	
+a:focus { padding: 0; background: #007be0 !important; margin: 0; outline: 0.2em solid #007be0; transition: background-color .25s linear; color: #ffffff !important; }
+.navigationDefault > nav { text-align: center; }
+.navigationDefault > nav > ul > li { display: inline-block; text-align: center; }
+.navigationDefault > nav > ul > li:last-child { margin-right: 0em; }
+.navigationDefault > nav > ul > li > a { width: 7em; height: 1.8em; text-decoration: none; display: block; border-bottom: 0.2em solid #000000; }
+.navigationDefault > nav > ul > li > a:focus { border-color: #ffffff; }
+ul { padding-left: 0; }
+li { list-style-type: square; }
+.skipnav li { list-style-type: none !important; }
+.skipnav a:focus { margin: 0 !important; border-bottom: 0.2em solid #ffffff; }
+.navigationSmallLink, .navigationSmall { display: none; }
+.navigationSmallLink { margin: 0 !important; }
+.navigationSmallLink:focus { border: 0; }
+div:focus { outline: none; }
+
+/* 
+	Hiding skip navigation:
+	http://davidwalsh.name/accessibility-elements 
+*/
+.skipnav { position: absolute; top: -500px; padding:0; margin:0; width:100%; left:0; }
+.skipnav a:focus { position: absolute; top: 500px; left: 0; width: 100%; margin: 0; padding: 0; padding-top: 1em; padding-bottom: 1em; border-top: 0; border-left: 0; border-right: 0; color: #007be0 !important; background: #ffffff !important; text-align: center; text-decoration: underline; transition: background-color .25s linear; }
+
+.navigationSmallLink span {
+  position: relative;
+  padding-left: 1.25em;
+}
+
+.navigationSmallLink span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 1em;
+  height: 0.15em;
+  background: black;
+  box-shadow: 
+    0 0.25em 0 0 black,
+    0 0.5em 0 0 black;
+}
+
+@media screen and (max-width: 600px) {
+	body { font-size: 100%; }
+	.wrap { margin-top: 0em; width: 100%; }
+
+	input { display: block; height: 2em; width: 100%; }
+
+	.navigationDefault {
+		display: none !important;
+	}
+
+	.navigationSmallLink {
+		display: block;
+		font-size: 1.4em;
+		color: #000000 !important;
+		text-decoration: none;
+		width: 100%;
+		text-align: right;
+	}
+
+	.navigationSmall {
+		display: block !important;
+		background: #eeeeee;
+		border-top: 0.2em solid #000000;
+		margin-left: -1em;
+		margin-right: -1em;
+		margin-top: 5em;
+	}
+
+	.navigationSmall nav {
+		margin-bottom: 0;
+	}
+
+	.navigationSmall ul {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.navigationSmall li {
+		display: block !important;	
+		border-bottom: 0.1em solid #cccccc;
+		font-size: 120%;
+		text-align: center;
+	}
+
+	.navigationSmall a {
+		display: block;
+		width: 100% !important;
+		text-decoration: none;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+	}
+
+	.navigationSmall a:focus {
+		margin: 0em;
+	}
+}
+</style>
