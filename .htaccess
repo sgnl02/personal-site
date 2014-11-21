@@ -33,10 +33,11 @@ Header set Cache-Control "max-age=2419200, public, must-revalidate"
 </FilesMatch>
 
 <FilesMatch "\.(jpg|jpeg|png|gif)$">
-#Cache for 1 month
-#Specified in seconds
+#Cache in the future, because it's revisioned: 
+#http://www.stevesouders.com/blog/2008/08/23/revving-filenames-dont-use-querystring/
 
-Header set Cache-Control "max-age=2419200, public, must-revalidate"
+ExpiresActive On
+ExpiresDefault "access plus 10 years"
 </FilesMatch>
 
 <FilesMatch "\.(js|css|html|htm|xml|txt|xsl)$">
